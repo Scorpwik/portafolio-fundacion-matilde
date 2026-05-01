@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Core Values | Civic Action Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-animation">
+    <div class="liquid-mesh"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <defs>
+        <filter id="liquid-filter">
+          <feTurbulence type="fractalNoise" baseFrequency="0.005" numOctaves="2" result="turbulence" />
+          <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="60" />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="scroll-progress"></div>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">JL</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="aprendizaje.html" class="nav-link">Learning</a>
+      <a href="ciudadania.html" class="nav-link">Citizenship</a>
+      <a href="valores.html" class="nav-link active">Values</a>
+      <a href="compromisos.html" class="nav-link">Commitments</a>
+      <a href="carta.html" class="nav-link">Letter to the Future</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="valores">
+      <div class="container">
+        <span class="badge reveal">03 / Section</span>
+        <h2 class="section-title reveal">Core<br>Values</h2>
+        <p class="section-desc reveal">Three ethical pillars that govern my professional practice and my commitment to community well-being.</p>
+        
+        <div class="values-grid">
+          <div class="value-card reveal" onclick="openModal('modal-val-1')">
+            <div class="value-icon">💜</div>
+            <h3>Critical Empathy</h3>
+            <p class="importance"><strong>Why is it important?</strong> It allows for designing solutions that are not only aesthetic but also respect the dignity and real context of the user.</p>
+            <p class="application"><strong>How was it applied?</strong> It was used by adapting the technical language of the sexual health project to be accessible to the mothers of Matilde House.</p>
+            <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-lime); margin-top: 1.5rem; display: block; letter-spacing: 1px;">Click to expand reflection +</span>
+          </div>
+          <div class="value-card reveal" onclick="openModal('modal-val-2')">
+            <div class="value-icon">⚡</div>
+            <h3>Supportive Efficiency</h3>
+            <p class="importance"><strong>Why is it important?</strong> In the third sector, resources are scarce. Efficiency ensures that every donation reaches its full potential.</p>
+            <p class="application"><strong>How was it applied?</strong> It was applied by recovering and optimizing 4 water filters and managing donated hardware for the educational area.</p>
+            <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-lime); margin-top: 1.5rem; display: block; letter-spacing: 1px;">Click to expand reflection +</span>
+          </div>
+          <div class="value-card reveal" onclick="openModal('modal-val-3')">
+            <div class="value-icon">🛡️</div>
+            <h3>Pedagogical Responsibility</h3>
+            <p class="importance"><strong>Why is it important?</strong> A leading citizen must educate their environment to break cycles of indifference and form lasting civic awareness.</p>
+            <p class="application"><strong>How was it applied?</strong> It was applied by guiding children in the daily care of the courtyard and responsible waste management.</p>
+            <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent-lime); margin-top: 1.5rem; display: block; letter-spacing: 1px;">Click to expand reflection +</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-credits">Joshua Alexander Lozada Zurita</div>
+      <div class="footer-tagline">Design as a non-negotiable ethical commitment.</div>
+      <div class="footer-nav">
+        <a href="aprendizaje.html" class="nav-link">Learning</a>
+        <a href="ciudadania.html" class="nav-link">Citizenship</a>
+        <a href="valores.html" class="nav-link">Values</a>
+        <a href="compromisos.html" class="nav-link">Commitments</a>
+      </div>
+      <p style="font-size: 0.7rem; color: var(--text-dim);">&copy; 2025 Joshua Alexander Lozada Zurita · USFQ · Ecuador</p>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+  <div id="modal-val-1" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal(event)">&times;</button>
+      <h2 class="modal-title">Critical Empathy</h2>
+      <div class="modal-text">
+        <p><strong>Why is it important in my civic commitment?</strong><br>Empathy in the context of community service transcends superficial compassion. For an interactive media designer, empathy is a working methodology. Without it, we risk imposing solutions that do not adapt to the cultural or social reality of the community, wasting efforts and resources.</p>
+        <p><strong>How did I apply it in my service?</strong><br>At the Matilde Foundation, listening to the mothers meant suspending my professional assumptions. Listening sessions revealed that the needs perceived by the design team did not always coincide with the real needs. I used participant observation tools to adapt the sexual health project, ensuring the language was dignified and accessible.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-val-2" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal(event)">&times;</button>
+      <h2 class="modal-title">Supportive Efficiency</h2>
+      <div class="modal-text">
+        <p><strong>Why is it important in my civic commitment?</strong><br>Efficiency in the context of an NGO is not an operational luxury—it is an ethical obligation. Every resource a professional wastes due to a lack of technical rigor is a resource that stops reaching a direct beneficiary. As a professional citizen, my duty is to optimize existing social capital.</p>
+        <p><strong>How did I apply it in my service?</strong><br>I diagnosed that the water filters were not working due to a simple but ignored technical incompatibility. By recovering them and managing the configuration of donated hardware for the educational area, I managed to multiply the foundation's impact without it having to invest additional funds.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-val-3" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal(event)">&times;</button>
+      <h2 class="modal-title">Pedagogical Responsibility</h2>
+      <div class="modal-text">
+        <p><strong>Why is it important in my civic commitment?</strong><br>Responsibility goes beyond fulfilling schedules. It implies understanding that we are role models. Educating the environment in civic values is the only way to ensure that social change is sustainable in the long term, breaking the cycles of indifference that affect our city.</p>
+        <p><strong>How did I apply it in my service?</strong><br>Beyond my technical tasks, I dedicated daily time to guiding children in courtyard maintenance and waste management. It was a lesson in patience and consistency, teaching them that caring for Matilde House's space is an act of respect for themselves and their community.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="shared.js"></script>
+</body>
+</html>

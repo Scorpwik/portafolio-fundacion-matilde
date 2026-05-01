@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Learning Anchor | My Body, My Health</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-animation">
+    <div class="liquid-mesh"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <defs>
+        <filter id="liquid-filter">
+          <feTurbulence type="fractalNoise" baseFrequency="0.005" numOctaves="2" result="turbulence" />
+          <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="60" />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="scroll-progress"></div>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">JL</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="aprendizaje.html" class="nav-link active">Learning</a>
+      <a href="ciudadania.html" class="nav-link">Citizenship</a>
+      <a href="valores.html" class="nav-link">Values</a>
+      <a href="compromisos.html" class="nav-link">Commitments</a>
+      <a href="carta.html" class="nav-link">Letter to the Future</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="aprendizaje">
+      <div class="container">
+        <span class="badge reveal">01 / Section</span>
+        <h2 class="section-title reveal">The Learning<br>Anchor</h2>
+        <p class="section-desc reveal">Exploring how design becomes a tool for social justice when applied to vulnerable communities.</p>
+        
+        <div class="dash-block reveal" style="border-left: 4px solid var(--accent-lime); margin-bottom: 3rem;">
+           <span class="badge" style="border:none; padding:0; margin-bottom: 5px;">Selected Project</span>
+           <h3 style="font-family: var(--font-display); font-size: 2.5rem;">"My Body, My Health"</h3>
+        </div>
+
+        <!-- Dashboard -->
+        <div class="dashboard-grid">
+          <div class="dash-block reveal">
+            <h4>Contraceptive use at first intercourse (Ages 12-24)</h4>
+            <div class="stat-row">
+              <span class="stat-info">Women</span>
+              <div class="stat-val-group">
+                <span class="stat-old">43.7%</span>
+                <span class="stat-new">42.2%</span>
+              </div>
+            </div>
+            <div class="progress-wrap"><div class="progress-bar" data-width="42.2"></div></div>
+            <div class="stat-row" style="margin-top: 1rem;">
+              <span class="stat-info">Men</span>
+              <div class="stat-val-group">
+                <span class="stat-old">53.8%</span>
+                <span class="stat-new">57.5%</span>
+              </div>
+            </div>
+            <div class="progress-wrap"><div class="progress-bar" data-width="57.5" style="background: var(--accent-violet);"></div></div>
+            <p style="font-size: 0.8rem; color: var(--accent-violet); margin-top: 1rem; font-weight: 700;">Issue: Persistent misinformation among youth.</p>
+          </div>
+
+          <div class="dash-block reveal">
+            <h4>Use of Modern Methods (Married Pop.)</h4>
+            <div class="stat-row">
+              <span class="stat-info">Women</span>
+              <div class="stat-val-group">
+                <span class="stat-old">92.8%</span>
+                <span class="stat-new">81.5%</span>
+              </div>
+            </div>
+            <div class="progress-wrap"><div class="progress-bar" data-width="81.5" style="background: var(--accent-violet);"></div></div>
+            <div class="stat-row" style="margin-top: 1.5rem;">
+              <span class="stat-info">Men</span>
+              <div class="stat-val-group">
+                <span class="stat-old">94.8%</span>
+                <span class="stat-new">83.2%</span>
+              </div>
+            </div>
+            <div class="progress-wrap"><div class="progress-bar" data-width="83.2" style="background: var(--accent-violet);"></div></div>
+            <p style="font-size: 0.7rem; color: var(--text-dim); margin-top: 1rem;">Includes: IUD, Condom, Pill, and Implants.</p>
+          </div>
+
+          <div class="dash-block reveal">
+            <h4>Age at First Sexual Intercourse</h4>
+            <div class="stat-row">
+              <span class="stat-info">Women</span>
+              <div class="stat-val-group">
+                <span class="stat-old">18y</span>
+                <span class="stat-new">17.5y</span>
+              </div>
+            </div>
+            <div class="stat-row" style="margin-top: 1rem;">
+              <span class="stat-info">Men</span>
+              <div class="stat-val-group">
+                <span class="stat-old">16y</span>
+                <span class="stat-new">16y</span>
+              </div>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--accent-lime); margin-top: 1rem;">Tendency toward earlier onset in female population.</p>
+          </div>
+
+          <div class="dash-block reveal">
+            <h4>"Matilde House" Objectives</h4>
+            <div class="stat-row">
+              <span class="stat-info">Knowledge (Rights/Sexuality)</span>
+              <div class="stat-val-group">
+                <span class="stat-new">+50%</span>
+              </div>
+            </div>
+            <div class="progress-wrap"><div class="progress-bar" data-width="50"></div></div>
+            <p style="font-size: 0.9rem; color: var(--text-dim); margin-top: 1.5rem;"><strong>Goal:</strong> Achieve this increase within 6 months.</p>
+          </div>
+        </div>
+
+        <!-- Strategy Blocks -->
+        <div class="dashboard-grid" style="margin-top: 2rem;">
+          <div class="dash-block reveal">
+            <h4>Evaluation Methodology</h4>
+            <p style="font-size: 1.1rem; font-family: var(--font-display);">Pre & Post-test Score System</p>
+            <p style="font-size: 0.9rem; color: var(--text-dim); margin-top: 0.5rem;">Comparative results before and after interventions to measure real effectiveness.</p>
+          </div>
+          <div class="dash-block reveal">
+            <h4>Key Activities</h4>
+            <ul style="list-style: none; font-size: 0.9rem; color: var(--text-main);">
+              <li style="margin-bottom: 0.5rem;">📅 Monthly sexual education workshops.</li>
+              <li>📱 Digital Social Media campaigns (Informative posts).</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Reflections -->
+        <div class="dashboard-grid" style="margin-top: 4rem;">
+          <div class="reveal">
+            <h3 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 1.5rem;">What did I learn?</h3>
+            <p style="color: var(--text-dim); line-height: 1.8;">Through the development of the 'My Body, My Health' project for the Matilde Foundation, I learned that the information gap is one of the most invisible forms of structural inequality. My key learning was not technical but methodological: I understood how to translate complex statistical data and reproductive rights into a visual language that is accessible, empowering, and free of stigmas.</p>
+          </div>
+          <div class="reveal">
+            <h3 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 1.5rem;">Why was it significant?</h3>
+            <p style="color: var(--text-dim); line-height: 1.8;">This learning was vital because it allowed me to connect my career in Interactive Media Design with an urgent human need in the Ecuadorian context. By analyzing statistics on contraceptive use and the age of first intercourse, I realized that design is a functional necessity.</p>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <button class="btn" onclick="openModal('modal-learning')">Read full reflection (350 words)</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-credits">Joshua Alexander Lozada Zurita</div>
+      <div class="footer-tagline">Design as a non-negotiable ethical commitment.</div>
+      <div class="footer-nav">
+        <a href="aprendizaje.html" class="nav-link">Learning</a>
+        <a href="ciudadania.html" class="nav-link">Citizenship</a>
+        <a href="valores.html" class="nav-link">Values</a>
+        <a href="compromisos.html" class="nav-link">Commitments</a>
+      </div>
+      <p style="font-size: 0.7rem; color: var(--text-dim);">&copy; 2025 Joshua Alexander Lozada Zurita · USFQ · Ecuador</p>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+  <div id="modal-learning" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal(event)">&times;</button>
+      <h2 class="modal-title">Design as Social Justice</h2>
+      <div class="modal-text">
+        <p>During my service at the Matilde Foundation, I observed that misinformation is a structural barrier that perpetuates cycles of vulnerability. Developing the <strong>"My Body, My Health"</strong> project taught me that my role as a future professional is not only aesthetic but deeply functional and ethical. By analyzing the data comparison between 2018 and 2026, I identified alarming regressions in access to modern methods in the married population, dropping from 92.8% to 81.5% in women, and a trend toward an earlier age of sexual debut in women at 17.5 years. These figures are not just numbers; they are the reflection of an information gap that design must close.</p>
+        
+        <div class="modal-highlight">
+          <strong>Key insight:</strong> The icons we considered 'universal' were not. Colors had specific cultural connotations, and typography was not just an aesthetic choice but a real accessibility tool for women with varying levels of literacy.
+        </div>
+        
+        <p>The design process became an exercise in humility and active listening. I began researching user-centered design methodologies, applying participant observation techniques to understand how the mothers at Matilde House processed visual information. I discovered that standard medical terminology generated rejection and confusion; thus, my work consisted of "translating" those reproductive rights into an empowering visual system, free of stigma and easy to navigate. I learned that true excellence in design does not reside in technical sophistication, but in the ability to make complexity invisible to bridge informational distances.</p>
+
+        <p>Professionally, this experience redefined my vision. Before PASEC, I saw design as a commercial service; now I understand it as social capital. My goal with the monthly workshops and digital campaigns is to increase knowledge about bodily autonomy by 50% within 6 months, using a Pre and Post-test system to validate that the change is not just visual but cognitive. This project is proof that a designer can and must be an ethical interventionist in their community, transforming misinformation into citizen power.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="shared.js"></script>
+</body>
+</html>

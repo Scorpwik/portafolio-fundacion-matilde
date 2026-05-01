@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joshua Alexander Lozada Zurita | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-animation">
+    <div class="liquid-mesh"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <defs>
+        <filter id="liquid-filter">
+          <feTurbulence type="fractalNoise" baseFrequency="0.005" numOctaves="2" result="turbulence" />
+          <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="60" />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="scroll-progress"></div>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">JL</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="aprendizaje.html" class="nav-link">Learning</a>
+      <a href="ciudadania.html" class="nav-link">Citizenship</a>
+      <a href="valores.html" class="nav-link">Values</a>
+      <a href="compromisos.html" class="nav-link">Commitments</a>
+      <a href="carta.html" class="nav-link">Letter to the Future</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="hero">
+      <div class="container">
+        <span class="badge reveal">Portfolio 2025</span>
+        <h1 class="hero-name reveal">
+          Joshua Alexander<br>
+          <span>Lozada Zurita</span>
+        </h1>
+        <p class="hero-tagline reveal">Interactive Media Design · USFQ · Matilde Foundation</p>
+        <p class="section-desc reveal">Exploring the intersection of interactive design and social impact through responsible technical intervention.</p>
+        
+        <div class="hero-stats">
+          <div class="stat-item reveal">
+            <span class="stat-number" data-target="2026">0</span>
+            <span class="stat-label">Period</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-number" data-target="85">0</span>
+            <span class="stat-label">Service Hours</span>
+          </div>
+          <div class="stat-item reveal">
+            <span class="stat-number">PASEC</span>
+            <span class="stat-label">Approach</span>
+          </div>
+        </div>
+
+        <div class="hero-cards">
+          <a href="aprendizaje.html" class="nav-card reveal">
+            <h4>Learning</h4>
+            <p>Anchor of social knowledge.</p>
+          </a>
+          <a href="ciudadania.html" class="nav-card reveal">
+            <h4>Citizenship</h4>
+            <p>Active civic evolution.</p>
+          </a>
+          <a href="valores.html" class="nav-card reveal">
+            <h4>Values</h4>
+            <p>Pillars of civic ethics.</p>
+          </a>
+          <a href="compromisos.html" class="nav-card reveal">
+            <h4>Commitments</h4>
+            <p>Strategic impact plan.</p>
+          </a>
+          <a href="carta.html" class="nav-card reveal">
+            <h4>Letter to the Future</h4>
+            <p>Reflection and process closure.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-credits">Joshua Alexander Lozada Zurita</div>
+      <div class="footer-tagline">Design as a non-negotiable ethical commitment.</div>
+      <div class="footer-nav">
+        <a href="aprendizaje.html" class="nav-link">Learning</a>
+        <a href="ciudadania.html" class="nav-link">Citizenship</a>
+        <a href="valores.html" class="nav-link">Values</a>
+        <a href="compromisos.html" class="nav-link">Commitments</a>
+      </div>
+      <p style="font-size: 0.7rem; color: var(--text-dim);">&copy; 2025 Joshua Alexander Lozada Zurita · USFQ · Ecuador</p>
+    </div>
+  </footer>
+  <script src="shared.js"></script>
+</body>
+</html>

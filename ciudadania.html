@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsible Citizenship | Ethical Evolution</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-animation">
+    <div class="liquid-mesh"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <defs>
+        <filter id="liquid-filter">
+          <feTurbulence type="fractalNoise" baseFrequency="0.005" numOctaves="2" result="turbulence" />
+          <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="60" />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="scroll-progress"></div>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">JL</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="aprendizaje.html" class="nav-link">Learning</a>
+      <a href="ciudadania.html" class="nav-link active">Citizenship</a>
+      <a href="valores.html" class="nav-link">Values</a>
+      <a href="compromisos.html" class="nav-link">Commitments</a>
+      <a href="carta.html" class="nav-link">Letter to the Future</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="ciudadania">
+      <div class="container">
+        <span class="badge reveal">02 / Section</span>
+        <h2 class="section-title reveal">Citizenship<br>Evolution</h2>
+        <p class="section-desc reveal">A critical analysis of the transformation of my civic role: from ethical passivity to responsible professional intervention.</p>
+        
+        <div class="comparison-grid">
+          <div class="compare-item reveal">
+            <span class="badge" style="border-color: var(--text-dim); color: var(--text-dim);">Initial Definition</span>
+            <h3>Citizenship as Passive Compliance</h3>
+            <p>Before my service experience, I defined a citizen as an individual who peacefully coexisted by complying with basic laws. It was a reactive vision: "being a good citizen" simply meant not causing trouble, not damaging infrastructure, and respecting basic coexistence rules without actively intervening in others' structural problems.</p>
+          </div>
+          <div class="compare-item after reveal">
+            <span class="badge">New Definition</span>
+            <h3>Strategic Citizenship & Technical Intervention</h3>
+            <p>Today, I understand citizenship as a <strong>proactive practice of justice</strong>. It is the responsibility to place my intellectual and technical capital at the service of repairing the social fabric. Complying with the law is not enough; a leading citizen diagnoses failures in their environment and applies their professional knowledge to propose sustainable and dignifying solutions.</p>
+          </div>
+        </div>
+
+        <div class="reveal" style="margin-top: 6rem; max-width: 900px;">
+          <h3 style="font-family: var(--font-display); font-size: 2.5rem; margin-bottom: 2rem;">Comparison: The Transition to Ethical Intervention</h3>
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dim); margin-bottom: 1.5rem;">
+            The evolution of my concept of citizenship represents a fundamental transition from <strong>ethical passivity to technical proactivity</strong>. In my initial definition, the citizen was seen as an isolated entity whose only obligation was the omission of conflict. This "reactive" vision was based on compliance with external norms: not littering, paying taxes, and respecting the law. It was a comfortable but sterile citizenship, as it ignored that silence in the face of inequality is also a form of participation in the system. What has changed radically is the <strong>locus of responsibility</strong>: it is no longer limited to "doing no harm," but expands to "actively contributing" through my specific skills as a designer.
+          </p>
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dim); margin-bottom: 1.5rem;">
+            This change was driven by my experience at the Matilde Foundation. Facing concrete problems, such as the inoperability of water filtration systems or the information gap in sexual health, I understood that my technical silence was civic negligence. The strategic citizenship I define now implies that professional knowledge is not private property for personal gain but social capital intended for the repair of the community fabric. The main difference lies in <strong>intentionality</strong>: before, I followed rules out of obligation; now, I seek to diagnose and resolve social system failures through interactive design and resource management.
+          </p>
+          <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-dim);">
+            However, some elements have remained unchanged: the value of <strong>respect</strong> and human dignity. What has changed is the way they manifest. While before respect was "negative" (not bothering the other), now it is "positive" respect (recognizing the other's need and acting to empower their autonomy). What remains is the conviction that harmonious coexistence is the basis of society, but I have learned that true harmony is not born from the absence of friction, but from the presence of justice and equity. My current commitment is to stop being an observer resident and become an ethical interventionist who understands that their well-being is intrinsically linked to the well-being of their community.
+          </p>
+          <button class="btn" onclick="openModal('modal-citizenship')">View expanded management analysis</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-credits">Joshua Alexander Lozada Zurita</div>
+      <div class="footer-tagline">Design as a non-negotiable ethical commitment.</div>
+      <div class="footer-nav">
+        <a href="aprendizaje.html" class="nav-link">Learning</a>
+        <a href="ciudadania.html" class="nav-link">Citizenship</a>
+        <a href="valores.html" class="nav-link">Values</a>
+        <a href="compromisos.html" class="nav-link">Commitments</a>
+      </div>
+      <p style="font-size: 0.7rem; color: var(--text-dim);">&copy; 2025 Joshua Alexander Lozada Zurita · USFQ · Ecuador</p>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+  <div id="modal-citizenship" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal(event)">&times;</button>
+      <h2 class="modal-title">Strategic Resource Management</h2>
+      <div class="modal-text">
+        <p>The most significant transformation between the initial vision and the new definition of citizenship lies in the fundamental shift of the locus of responsibility. Discovering the water filters at the Matilde Foundation crystallized this evolution in a concrete and tangible way. What initially seemed like a technical project—diagnosing why the water purification system was not working—revealed itself as an exercise in applied citizenship.</p>
+        
+        <div class="modal-highlight">
+          <strong>Technical Impact:</strong> The diagnosis revealed that the problem was not mechanical, but systemic. Each optimized filter was not simply a repaired object, but the tangible manifestation of an assumed responsibility that transformed "aid" into "technical resource management."
+        </div>
+
+        <p>Similarly, the management of technology hardware donations amplified this transformation. It was not the conventional charity of transferring excess equipment without criteria, but implementing a structured process: inventorying needs, evaluating compatibility with Matilde House's infrastructure, configuring equipment with educational software, and training staff. This comprehensive management illustrates the difference between passive citizenship (donate and forget) and technical citizenship (diagnose, implement, train, and measure).</p>
+
+        <p>In conclusion, this experience taught me that professional efficiency linked to the well-being of others is an ethical requirement. A designer who optimizes resources without considering social impact operates in an incomplete paradigm. The new definition requires that every technical skill be evaluated by its contribution to the social ecosystem where it is deployed.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="shared.js"></script>
+</body>
+</html>

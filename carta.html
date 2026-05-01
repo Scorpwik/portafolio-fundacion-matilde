@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter to the Future | Final Reflection</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-animation">
+    <div class="liquid-mesh"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <defs>
+        <filter id="liquid-filter">
+          <feTurbulence type="fractalNoise" baseFrequency="0.005" numOctaves="2" result="turbulence" />
+          <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="60" />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="scroll-progress"></div>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">JL</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="aprendizaje.html" class="nav-link">Learning</a>
+      <a href="ciudadania.html" class="nav-link">Citizenship</a>
+      <a href="valores.html" class="nav-link">Values</a>
+      <a href="compromisos.html" class="nav-link">Commitments</a>
+      <a href="carta.html" class="nav-link active">Letter to the Future</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="carta">
+      <div class="container">
+        <span class="badge reveal">05 / Section</span>
+        <h2 class="section-title reveal">Letter to<br>the Future</h2>
+        <p class="section-desc reveal">A reflective message for the Joshua of tomorrow, integrating service lessons into professional identity.</p>
+        
+        <div class="reveal" style="max-width: 800px; margin-bottom: 4rem;">
+          <p style="font-size: 1.2rem; line-height: 1.8; color: var(--text-dim);">This video-letter represents the reflective closure of my learning and service process. In it, I articulate not only the commitments acquired but the personal transformations that occurred when leaving the academic bubble and facing the social reality of my country. It is the testimony of a future professional in interactive design who understands their practice as an act of responsibility.</p>
+        </div>
+
+        <div class="video-wrapper reveal">
+          <!-- Placeholder for YouTube Video -->
+          <div class="video-placeholder">
+             <div class="play-btn">
+               <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+             </div>
+             <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-lime);">VIDEO: LETTER TO THE FUTURE (LINK PENDING)</p>
+          </div>
+          <!-- Uncomment and place the real link when ready:
+          <iframe src="https://www.youtube.com/embed/REAL_LINK_HERE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-credits">Joshua Alexander Lozada Zurita</div>
+      <div class="footer-tagline">Design as a non-negotiable ethical commitment.</div>
+      <div class="footer-nav">
+        <a href="aprendizaje.html" class="nav-link">Learning</a>
+        <a href="ciudadania.html" class="nav-link">Citizenship</a>
+        <a href="valores.html" class="nav-link">Values</a>
+        <a href="compromisos.html" class="nav-link">Commitments</a>
+      </div>
+      <p style="font-size: 0.7rem; color: var(--text-dim);">&copy; 2025 Joshua Alexander Lozada Zurita · USFQ · Ecuador</p>
+    </div>
+  </footer>
+
+  <script src="shared.js"></script>
+</body>
+</html>

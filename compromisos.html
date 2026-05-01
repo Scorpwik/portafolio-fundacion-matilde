@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Commitments | Impact Plan</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-animation">
+    <div class="liquid-mesh"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <defs>
+        <filter id="liquid-filter">
+          <feTurbulence type="fractalNoise" baseFrequency="0.005" numOctaves="2" result="turbulence" />
+          <feDisplacementMap in="SourceGraphic" in2="turbulence" scale="60" />
+        </filter>
+      </defs>
+    </svg>
+  </div>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+  <div id="scroll-progress"></div>
+
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">JL</a>
+    <div class="nav-links">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="aprendizaje.html" class="nav-link">Learning</a>
+      <a href="ciudadania.html" class="nav-link">Citizenship</a>
+      <a href="valores.html" class="nav-link">Values</a>
+      <a href="compromisos.html" class="nav-link active">Commitments</a>
+      <a href="carta.html" class="nav-link">Letter to the Future</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="compromisos">
+      <div class="container">
+        <span class="badge reveal">04 / Section</span>
+        <h2 class="section-title reveal">Social Impact<br>Commitments</h2>
+        
+        <div class="tabs-nav reveal">
+          <button class="tab-btn active" onclick="showTab('student')">Student</button>
+          <button class="tab-btn" onclick="showTab('professional')">Professional</button>
+        </div>
+
+        <!-- Student Tab -->
+        <div id="tab-student" class="tab-content active">
+          <div class="matrix-layout">
+            <div class="matrix-info reveal">
+              <span class="badge" style="border-color: var(--accent-lime); color: var(--accent-lime);">Student Commitment</span>
+              <h4 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 1rem;">Strategic Visual Identity for the Third Sector</h4>
+              <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-dim); margin-bottom: 2rem;">My commitment is to democratize high-fidelity design. I will develop comprehensive visual identity systems (Brand Manuals) for social organizations that lack access to professional branding services, allowing them to compete visually for resources and visibility in the digital ecosystem.</p>
+              
+              <span class="badge" style="border-color: var(--accent-violet); color: var(--accent-violet);">Evaluation Indicators</span>
+              <div class="indicator-list" style="margin-top: 1rem;">
+                <span class="indicator-tag">Brand Manual PDF (15+ Pages)</span>
+                <span class="indicator-tag">Logotype System</span>
+                <span class="indicator-tag">Typographic Guide</span>
+                <span class="indicator-tag">NGO Autonomy Level</span>
+              </div>
+            </div>
+            <div>
+              <span class="badge" style="margin-bottom: 2rem;">Technical Action Route</span>
+              <div class="action-grid">
+                <div class="action-card reveal" onclick="openModal('modal-s1')">
+                  <span>01</span>
+                  <h5>Impact Audit</h5>
+                  <p style="font-size: 0.7rem; color: var(--accent-lime); margin-top: 10px;">View methodology +</p>
+                </div>
+                <div class="action-card reveal" onclick="openModal('modal-s2')">
+                  <span>02</span>
+                  <h5>Brand Architecture</h5>
+                  <p style="font-size: 0.7rem; color: var(--accent-lime); margin-top: 10px;">View methodology +</p>
+                </div>
+                <div class="action-card reveal" onclick="openModal('modal-s3')">
+                  <span>03</span>
+                  <h5>Visual UX Optimization</h5>
+                  <p style="font-size: 0.7rem; color: var(--accent-lime); margin-top: 10px;">View methodology +</p>
+                </div>
+                <div class="action-card reveal" onclick="openModal('modal-s4')">
+                  <span>04</span>
+                  <h5>Autonomy Delivery</h5>
+                  <p style="font-size: 0.7rem; color: var(--accent-lime); margin-top: 10px;">View methodology +</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Tab -->
+        <div id="tab-professional" class="tab-content">
+          <div class="matrix-layout">
+            <div class="matrix-info">
+              <span class="badge" style="border-color: var(--accent-lime); color: var(--accent-lime);">Professional Commitment</span>
+              <h4 style="font-family: var(--font-display); font-size: 2rem; margin-bottom: 1rem;">Social UX Pro-Bono Lab</h4>
+              <p style="font-size: 1.1rem; line-height: 1.6; color: var(--text-dim); margin-bottom: 2rem;">I will dedicate 40 annual hours of specialized consultancy to projects that use technology for the resolution of humanitarian or social crises, applying Interactive Media Design methodologies to improve user experience in vulnerable contexts.</p>
+              
+              <span class="badge" style="border-color: var(--accent-violet); color: var(--accent-violet);">Impact Evaluation</span>
+              <div class="indicator-list" style="margin-top: 1rem;">
+                <span class="indicator-tag">Documented Hours Log</span>
+                <span class="indicator-tag">Usability Index (Post-Intervention)</span>
+                <span class="indicator-tag">Social Impact Certificate</span>
+                <span class="indicator-tag">High-Fidelity Prototype</span>
+              </div>
+            </div>
+            <div>
+              <span class="badge" style="margin-bottom: 2rem;">Professional Action Route</span>
+              <div class="action-grid">
+                <div class="action-card" onclick="openModal('modal-p1')">
+                  <span>01</span>
+                  <h5>Critical Impact Filter</h5>
+                  <p style="font-size: 0.7rem; color: var(--accent-lime); margin-top: 10px;">View methodology +</p>
+                </div>
+                <div class="action-card" onclick="openModal('modal-p2')">
+                  <span>02</span>
+                  <h5>Field UX Research</h5>
+                  <p style="font-size: 0.7rem; color: var(--accent-lime); margin-top: 10px;">View methodology +</p>
+                </div>
+                <div class="action-card" onclick="openModal('modal-p3')">
+                  <span>03</span>
+                  <h5>Inclusive Prototyping</h5>
+                  <p style="font-size: 0.7rem; color: var(--accent-lime); margin-top: 10px;">View methodology +</p>
+                </div>
+                <div class="action-card" onclick="openModal('modal-p4')">
+                  <span>04</span>
+                  <h5>Results Reporting</h5>
+                  <p style="font-size: 0.7rem; color: var(--accent-lime); margin-top: 10px;">View methodology +</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-credits">Joshua Alexander Lozada Zurita</div>
+      <div class="footer-tagline">Design as a non-negotiable ethical commitment.</div>
+      <div class="footer-nav">
+        <a href="aprendizaje.html" class="nav-link">Learning</a>
+        <a href="ciudadania.html" class="nav-link">Citizenship</a>
+        <a href="valores.html" class="nav-link">Values</a>
+        <a href="compromisos.html" class="nav-link">Commitments</a>
+      </div>
+      <p style="font-size: 0.7rem; color: var(--text-dim);">&copy; 2025 Joshua Alexander Lozada Zurita · USFQ · Ecuador</p>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+  <div id="modal-s1" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal(event)">&times;</button>
+      <h2 class="modal-title">Impact Audit</h2>
+      <div class="modal-text">
+        <p>This phase is not just visual; it is a strategic diagnosis. I will analyze how the NGO's current identity is failing to communicate its mission. 94% of first digital impressions are related to design, and a professional audit identifies the barriers preventing donors from trusting the organization.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-s2" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal(event)">&times;</button>
+      <h2 class="modal-title">Brand Architecture</h2>
+      <div class="modal-text">
+        <p>Building a system, not just a logo. Brand architecture ensures the organization has a consistent voice across all touchpoints. A well-designed system reduces production costs for materials by 60% and generates an immediate perception of institutional professionalism.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-s3" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal(event)">&times;</button>
+      <h2 class="modal-title">Visual UX Optimization</h2>
+      <div class="modal-text">
+        <p>Distinguishing decorative design from functional design. I will apply principles of legibility and visual hierarchy to ensure that critical messages (such as requests for help or rights information) are consumable by users with varying cognitive or technical abilities.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-s4" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal(event)">&times;</button>
+      <h2 class="modal-title">Autonomy Delivery</h2>
+      <div class="modal-text">
+        <p>My goal is for the NGO to be self-sufficient. I will deliver smart templates and usage guides that allow non-design staff to create high-quality content. This ensures the sustainability of the visual impact long after my intervention has ended.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-p1" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal(event)">&times;</button>
+      <h2 class="modal-title">Critical Impact Filter</h2>
+      <div class="modal-text">
+        <p>I will annually select projects where interactive design can solve life-or-death problems or access to fundamental rights. It's not about "doing favors," but about applying high-level consultancy where social need is most urgent.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-p2" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal(event)">&times;</button>
+      <h2 class="modal-title">Field UX Research</h2>
+      <div class="modal-text">
+        <p>Social design is not done from a desk. I will move to the real context of users (shelters, community centers, rural areas) to observe behaviors and co-create solutions born from reality, not academic assumptions.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-p3" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal(event)">&times;</button>
+      <h2 class="modal-title">Inclusive Prototyping</h2>
+      <div class="modal-text">
+        <p>I will develop solutions that comply with international WCAG standards. Interactive design must be universal; if a digital tool cannot be used by a person with a disability, then the design has failed in its civic mission.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-p4" class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close-modal" onclick="closeModal(event)">&times;</button>
+      <h2 class="modal-title">Results Reporting</h2>
+      <div class="modal-text">
+        <p>Impact must be measured. I will deliver reports demonstrating how the design intervention improved usability rates or the organization's reach, closing the commitment cycle with transparency and real data.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="shared.js"></script>
+</body>
+</html>
