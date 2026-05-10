@@ -1,17 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
-  /* --- Cursor Logic --- */
+  /* --- Optimized Cursor Logic --- */
   const dot = document.getElementById('cursor-dot');
   const ring = document.getElementById('cursor-ring');
   
   if (dot && ring) {
+    let mouseX = 0, mouseY = 0;
+    let dotX = 0, dotY = 0;
+    let ringX = 0, ringY = 0;
+
     document.addEventListener('mousemove', (e) => {
-      dot.style.left = e.clientX + 'px';
-      dot.style.top = e.clientY + 'px';
-      ring.style.left = e.clientX + 'px';
-      ring.style.top = e.clientY + 'px';
+      mouseX = e.clientX;
+      mouseY = e.clientY;
     });
 
-    document.querySelectorAll('a, button, .value-card, .action-card, .nav-card').forEach(item => {
+    const animateCursor = () => {
+      // Dot follows mouse directly
+      dotX = mouseX;
+      dotY = mouseY;
+      dot.style.transform = `translate3d(${dotX}px, ${dotY}px, 0) translate(-50%, -50%)`;
+
+      // Ring follows with smoothing (Lerp)
+      // Change 0.15 to adjust "lag" (lower = more lag/smoothness)
+      ringX += (mouseX - ringX) * 0.15;
+      ringY += (mouseY - ringY) * 0.15;
+      ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate(-50%, -50%)`;
+
+      requestAnimationFrame(animateCursor);
+    };
+    animateCursor();
+
+    // Hover Effects
+    const interactiveElements = document.querySelectorAll('a, button, .value-card, .action-card, .nav-card, .tab-btn');
+    interactiveElements.forEach(item => {
       item.addEventListener('mouseenter', () => {
         ring.style.width = '70px';
         ring.style.height = '70px';
